@@ -38,8 +38,8 @@ class TestCommand(Command):
 setup(
 
     # Basic package information:
-    name = 'iploka-geoip',
-    version = '0.1.0',
+    name = 'iploka-python',
+    version = '1.0.0',
     packages = find_packages(exclude=['tests']),
 
     # Packaging options:
@@ -65,10 +65,11 @@ setup(
     author = 'allen',
     author_email = 'allen@howuku.com',
     license = 'UNLICENSE',
-    url = 'https://github.com/whois-api-llc/python-iploka-geoip',
-    keywords = 'python api client ip address public geoip service geolocation',
-    description = 'The simplest possible way to get IP geolocation information.',
-    long_description = open(normpath(join(dirname(abspath(__file__)), 'README.rst'))).read(),
+    url = 'https://github.com/iploka/iploka-python',
+    keywords = 'python ipaddress geoip geolocation',
+    description = 'Free GeoIP library to help you convert IP to Geolocation information by iploka.',
+    long_description = open(normpath(join(dirname(abspath(__file__)), 'README.md'))).read(),
+    long_description_content_type="text/markdown",
     classifiers = [
         'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
